@@ -67,6 +67,9 @@ a:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .chips li{background:var(--navy);border:2px solid var(--slate-light);border-radius:999px;padding:.4rem 1.1rem;font-weight:700;font-size:.9rem}
 
 /* work */
+.video{max-width:1150px;margin:0 auto 1rem}
+.video-frame{aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;background:#000;box-shadow:0 6px 18px rgba(0,0,0,.45)}
+.video-frame iframe{width:100%;height:100%;border:0;display:block}
 .highlights{background:var(--panel);border-radius:40px;padding:1.5rem 2.5rem 3rem;margin:1rem auto;max-width:1150px}
 .highlights .pill-wide{background:var(--navy);margin-top:.5rem}
 .project h4{text-align:center;font-size:1rem;margin:2rem 0 1rem}
