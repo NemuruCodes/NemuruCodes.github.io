@@ -11,7 +11,7 @@
 <meta property="og:title" content="Kaellum Alves | Game Designer">
 <meta property="og:description" content="I design modular systems for games. Gameplay design, systems design and prototyping.">
 <meta property="og:url" content="https://nemurucodes.github.io/">
-<meta property="og:image" content="https://nemurucodes.github.io/assets/guiding-light-cover.png">
+<meta property="og:image" content="https://nemurucodes.github.io/assets/logo-bg.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -48,10 +48,21 @@
 
     <div class="panel bio">
       <h3 class="tab">Bio</h3>
-      <div class="panel-body">
-        <p>I am Kaellum, a Junior game developer and soon to be graduate from Vega College. I specialize in creating games with modular systems. I have done 4 game jams and will hopefully do more in the future.</p>
-        <p>Although I am a generalist I have strengths as a technical designer, setting up strong system architecture that fellow game designers can build on.</p>
-        <p>My strengths lie mainly in prototyping, technical design, system design and gameplay design.</p>
+      <div class="bio-body">
+        <div class="bio-text">
+          <p class="bio-lead">Hi, I'm Kaellum, a junior game developer and soon-to-be graduate from Vega College.</p>
+          <p>I specialize in creating games with modular systems, and I have taken part in 4 game jams so far, with hopefully more to come.</p>
+          <p>Although I'm a generalist, my strength is technical design: setting up strong system architecture that fellow game designers can build on.</p>
+        </div>
+        <div class="bio-strengths">
+          <h4>Strengths</h4>
+          <ul>
+            <li>Prototyping</li>
+            <li>Technical design</li>
+            <li>Systems design</li>
+            <li>Gameplay design</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -97,49 +108,267 @@
     <div class="highlights">
       <h2 class="pill pill-title">Work</h2>
       <h3 class="pill pill-wide">Highlights</h3>
+      <p class="work-intro">Click a game to see what I did on it and the tools I used.</p>
 
-      <article class="project">
-        <h4>2Skate</h4>
-        <div class="project-row">
+      <article class="game" id="game-2skate">
+        <button class="game-toggle" type="button" aria-expanded="false" aria-controls="detail-2skate">
           <img src="assets/2skate.png" alt="Ragdoll skaters in a roller rink in 2Skate" width="285" height="156" loading="lazy" decoding="async">
-          <!-- To use a video instead of the image, swap the img above for:
-          <video src="assets/2skate.mp4" autoplay muted loop playsinline></video> -->
-          <div class="project-text">
-            <p>I did the ragdoll system and was able to apply it to the NPCs. I used UI toolkit for the interactive UI and made the objectives using a modular framework.</p>
+          <span><span class="game-name">2Skate</span><span class="game-hint">Click to see the team, my role and tools</span></span>
+          <span class="game-arrow" aria-hidden="true">&#9660;</span>
+        </button>
+        <div class="game-detail" id="detail-2skate" hidden>
+
+          <!-- a. Poster + credits -->
+          <div class="detail-section poster-row">
+            <img class="poster" src="assets/2skate-cover.gif" alt="2Skate poster" width="340" height="280" loading="lazy" decoding="async">
+            <div>
+              <h5>Team</h5>
+              <ul class="credits">
+                <li><strong>Kaellum Alves</strong><span>Programmer, Technical Designer</span></li>
+                <li><strong>Craig Harrod</strong><span>Artist, Programmer</span></li>
+                <li><strong>Devilliers Cloete</strong><span>Artists</span></li>
+				<li><strong>Ember Jones</strong><span>Programmer</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- b. Synopsis -->
+          <div class="detail-section">
+            <h5>Synopsis</h5>
+            <p>2Skate is a game about working in an 80s roller-rink diner as the only employee, the player must complete all objectives before the timer is up to prevent getting fired.</p>
+			<p> The player must complete all tasks while on skates controlling each leg indepentally.</p>
+          </div>
+
+          <!-- c. Project brief -->
+          <div class="detail-section">
+            <h5>Project Brief</h5>
+            <p>Cape Town based studio Free Lives sponsored a physics jam for all interested South African devs who are keen to explore the basics of physics based game design.</p>
+			<p>The Theme was "Surfing".</p>
+			<p>The Jam took place over a 9 day period but we continued to improve and ploish the game after this period.</p>
+          </div>
+
+          <!-- d. Role and contribution -->
+          <div class="detail-section">
+            <h5>My Role &amp; Contribution</h5>
+            <ul class="role-list">
+              <li>Built the ragdoll system and applied it to the NPCs as well as the player</li>
+              <li>Used UI Toolkit to create the interactive UI</li>
+              <li>Made the objectives using a modular framework</li>
+            </ul>
             <p class="outcome">The same ragdoll runs on the player and the NPCs, and new objectives plug into the framework instead of being hard-coded.</p>
-            <a class="btn btn-small" href="https://cragels.itch.io/2skate" target="_blank" rel="noopener">Play on itch.io</a>
+          </div>
+
+          <!-- e. Technologies -->
+          <div class="detail-section tech-row">
+            <div>
+              <h5>Engine &amp; Tools</h5>
+              <ul class="chips"><li>Unity</li><li>Blender</li></ul>
+            </div>
+            <div>
+              <h5>Language</h5>
+              <ul class="chips"><li>C#</li></ul>
+            </div>
+          </div>
+
+          <!-- f. Process snapshot -->
+          <div class="detail-section">
+            <h5>Process</h5>
+            <div class="process-grid">
+              <figure><img src="assets/2skate-1.png" alt="2Skate process work 1" width="300" height="170" loading="lazy" decoding="async"><figcaption>The ragdoll creation and learning process.</figcaption></figure>
+              <figure><img src="assets/2skate-2.png" alt="2Skate process work 2" width="300" height="170" loading="lazy" decoding="async"><figcaption>The set map with moving NPCs for the first time.</figcaption></figure>
+            </div>
+          </div>
+
+          <!-- g + h. Demo video and download, each with a link and a QR code -->
+          <div class="detail-section link-row">
+            <div class="link-card">
+              <img src="assets/qr/2skate-demo.png" alt="QR code for the 2Skate demo video" width="110" height="110" loading="lazy">
+              <div>
+                <h5>Demo Video</h5>
+                <a class="btn btn-small" href="YOUR-DEMO-VIDEO-LINK" target="_blank" rel="noopener">Watch demo</a>
+              </div>
+            </div>
+            <div class="link-card">
+              <img src="assets/qr/2skate-download.png" alt="QR code for the 2Skate download" width="110" height="110" loading="lazy">
+              <div>
+                <h5>Download</h5>
+                <a class="btn btn-small" href="https://cragels.itch.io/2skate" target="_blank" rel="noopener">Download on itch.io</a>
+              </div>
+            </div>
           </div>
         </div>
       </article>
 
-      <div class="rule"></div>
-
-      <article class="project">
-        <h4>Guiding Light</h4>
-        <div class="project-row">
+      <article class="game" id="game-guiding-light">
+        <button class="game-toggle" type="button" aria-expanded="false" aria-controls="detail-guiding-light">
           <img src="assets/guiding-light.png" alt="Green sonar line lighting a dark tunnel in Guiding Light" width="285" height="156" loading="lazy" decoding="async">
-          <!-- To use a video instead of the image, swap the img above for:
-          <video src="assets/guiding-light.mp4" autoplay muted loop playsinline></video> -->
-          <div class="project-text">
-            <p>I helped develop the interact system and made it modular, as well as helped make the levels. I also made a sonar shader the player could use to help navigate the dark.</p>
+          <span><span class="game-name">Guiding Light</span><span class="game-hint">Click to see the team, my role and tools</span></span>
+          <span class="game-arrow" aria-hidden="true">&#9660;</span>
+        </button>
+        <div class="game-detail" id="detail-guiding-light" hidden>
+
+          <!-- a. Poster + credits -->
+          <div class="detail-section poster-row">
+            <img class="poster" src="assets/guiding-light-cover.png" alt="Guiding Light poster" width="340" height="280" loading="lazy" decoding="async">
+            <div>
+              <h5>Team</h5>
+              <ul class="credits">
+                <li><strong>Kaellum Alves</strong><span>Programmer, Shader Designer</span></li>
+                <li><strong>Craig Harrod</strong><span>3D Artist, Programmer</span></li>
+                <li><strong>Nick Smart</strong><span>3D Artist</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- b. Synopsis -->
+          <div class="detail-section">
+            <h5>Synopsis</h5>
+            <p>Guiding Light is an aesthetic puzzle game where the player must use echo location to find mirrors to reflect light to charge a mysterious center Orb.</p>
+          </div>
+
+          <!-- c. Project brief -->
+          <div class="detail-section">
+            <h5>Project Brief</h5>
+            <p>This was a submission for a Vega campus game jam 2026.</p>
+			<p>The theme was "Reflection".</p>
+          </div>
+
+          <!-- d. Role and contribution -->
+          <div class="detail-section">
+            <h5>My Role &amp; Contribution</h5>
+            <ul class="role-list">
+              <li>Helped develop the interact system and made it modular</li>
+              <li>Helped build the levels</li>
+              <li>Made a sonar shader the player can use to navigate the dark</li>
+            </ul>
             <p class="outcome">The sonar shader lets players read dark spaces, and the modular interact system lets levels reuse the same building blocks.</p>
-            <a class="btn btn-small" href="https://cragels.itch.io/guiding-light" target="_blank" rel="noopener">Play on itch.io</a>
+          </div>
+
+          <!-- e. Technologies -->
+          <div class="detail-section tech-row">
+            <div>
+              <h5>Engine &amp; Tools</h5>
+              <ul class="chips"><li>Unity</li><li>Blender</li></ul>
+            </div>
+            <div>
+              <h5>Language</h5>
+              <ul class="chips"><li>C#</li></ul>
+            </div>
+          </div>
+
+          <!-- f. Process snapshot -->
+          <div class="detail-section">
+            <h5>Process</h5>
+            <div class="process-grid">
+              <figure><img src="assets/guiding-light-1.png" alt="Guiding Light process work 1" width="300" height="170" loading="lazy" decoding="async"><figcaption>The starting postion of the player with the baked lighting.</figcaption></figure>
+              <figure><img src="assets/guiding-light-2.png" alt="Guiding Light process work 2" width="300" height="170" loading="lazy" decoding="async"><figcaption>The Echo location/Sonar feature being tested.</figcaption></figure>
+            </div>
+          </div>
+
+          <!-- g + h. Demo video and download, each with a link and a QR code -->
+          <div class="detail-section link-row">
+            <div class="link-card">
+              <img src="assets/qr/guiding-light-demo.png" alt="QR code for the Guiding Light demo video" width="110" height="110" loading="lazy">
+              <div>
+                <h5>Demo Video</h5>
+                <a class="btn btn-small" href="YOUR-DEMO-VIDEO-LINK" target="_blank" rel="noopener">Watch demo</a>
+              </div>
+            </div>
+            <div class="link-card">
+              <img src="assets/qr/guiding-light-download.png" alt="QR code for the Guiding Light download" width="110" height="110" loading="lazy">
+              <div>
+                <h5>Download</h5>
+                <a class="btn btn-small" href="https://cragels.itch.io/guiding-light" target="_blank" rel="noopener">Download on itch.io</a>
+              </div>
+            </div>
           </div>
         </div>
       </article>
 
-      <div class="rule"></div>
+      <article class="game" id="game-tower-defense">
+        <button class="game-toggle" type="button" aria-expanded="false" aria-controls="detail-tower-defense">
+          <img src="assets/tower-defense.png" alt="Tower Defense gameplay screenshot" width="285" height="156" loading="lazy" decoding="async">
+          <span><span class="game-name">Tower Defense</span><span class="game-hint">Click to see the team, my role and tools</span></span>
+          <span class="game-arrow" aria-hidden="true">&#9660;</span>
+        </button>
+        <div class="game-detail" id="detail-tower-defense" hidden>
 
-      <article class="project">
-        <h4>Safari Sanctuary</h4>
-        <div class="project-row">
-          <img src="assets/safari-sanctuary-play.png" alt="Lion mini-game in Safari Sanctuary" width="180" height="165" loading="lazy" decoding="async">
-          <!-- To use a video instead of the image, swap the img above for:
-          <video src="assets/safari-sanctuary.mp4" autoplay muted loop playsinline></video> -->
-          <div class="project-text">
-            <p>I created the Lion mini-game, and added the cool-down UI for the ability.</p>
-            <p class="outcome">The cool-down UI shows players when the lion's ability is ready to use again.</p>
-            <a class="btn btn-small" href="https://kaellum.itch.io/safari-sanctury" target="_blank" rel="noopener">Play on itch.io</a>
+          <!-- a. Poster + credits -->
+          <div class="detail-section poster-row">
+            <img class="poster" src="assets/tower-defense-cover.gif" alt="Tower Defense poster" width="340" height="280" loading="lazy" decoding="async">
+            <div>
+              <h5>Team</h5>
+              <ul class="credits">
+                <li><strong>Kaellum Alves</strong><span>Programmer, 3D Artist, Shader & Particle Artist</span></li>
+                <li><strong>Craig Harrod</strong><span>Programmer, Shader Artist</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- b. Synopsis -->
+          <div class="detail-section">
+            <h5>Synopsis</h5>
+            <p>This Tower Defense game is set in magical world where the player must place & upgrade towers strategically to defend the center tower fromt the Goblins.</p>
+          </div>
+
+          <!-- c. Project brief -->
+          <div class="detail-section">
+            <h5>Project Brief</h5>
+            <p>This was our Final Game Development Project where we were required to implment a multitude of procedural features, we decide to include: </p>
+			<p>Procedural Particle Damaging effects, Procedural Map Generation, Procedural Path Generation & Procedural Obstacle Generation.</p>
+			<p>We where also required to make Shaders for thsi project, we made: </p>
+			<p>A water shader that deforms a plane, An electricity-like damaging effect that works for the Beam tower beam and Magic Orb shader for the towers.</p>
+          </div>
+
+          <!-- d. Role and contribution -->
+          <div class="detail-section">
+            <h5>My Role &amp; Contribution</h5>
+            <ul class="role-list">
+              <li>Built procedurally generated terrain with multiple paths leading to the object the player defends</li>
+              <li>Designed ScriptableObject-based towers so new tower types are easy to add</li>
+              <li>Set up enemy pathing with NavMesh, plus a wave system driven by ScriptableObjects</li>
+              <li>Made a procedural electricity shader and VFX for the beam tower</li>
+            </ul>
+            <p class="outcome">New towers, enemies and waves are created as data assets, so the game can grow without rewriting core code.</p>
+          </div>
+
+          <!-- e. Technologies -->
+          <div class="detail-section tech-row">
+            <div>
+              <h5>Engine &amp; Tools</h5>
+              <ul class="chips"><li>Unity</li><li>Blender</li></ul>
+            </div>
+            <div>
+              <h5>Language</h5>
+              <ul class="chips"><li>C#</li></ul>
+            </div>
+          </div>
+
+          <!-- f. Process snapshot -->
+          <div class="detail-section">
+            <h5>Process</h5>
+            <div class="process-grid">
+              <figure><img src="assets/tower-defense-1.png" alt="Tower Defense process work 1" width="300" height="170" loading="lazy" decoding="async"><figcaption>Gameplay Screenshot showing the different towers.</figcaption></figure>
+              <figure><img src="assets/tower-defense-2.gif" alt="Tower Defense process work 2" width="300" height="170" loading="lazy" decoding="async"><figcaption>The Finalised 1st stage of the towers.</figcaption></figure>
+            </div>
+          </div>
+
+          <!-- g + h. Demo video and download, each with a link and a QR code -->
+          <div class="detail-section link-row">
+            <div class="link-card">
+              <img src="assets/qr/tower-defense-demo.png" alt="QR code for the Tower Defense demo video" width="110" height="110" loading="lazy">
+              <div>
+                <h5>Demo Video</h5>
+                <a class="btn btn-small" href="YOUR-DEMO-VIDEO-LINK" target="_blank" rel="noopener">Watch demo</a>
+              </div>
+            </div>
+            <div class="link-card">
+              <img src="assets/qr/tower-defense-download.png" alt="QR code for the Tower Defense download" width="110" height="110" loading="lazy">
+              <div>
+                <h5>Download</h5>
+                <span class="btn btn-small btn-disabled" aria-disabled="true">itch.io page coming soon</span>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -165,6 +394,21 @@
   </ul>
 </footer>
 
+<script>
+/* Open / close a game's details when its image is clicked. */
+(function () {
+  document.querySelectorAll(".game-toggle").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var panel = document.getElementById(btn.getAttribute("aria-controls"));
+      var open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!open));
+      panel.hidden = open;
+      btn.closest(".game").classList.toggle("open", !open);
+      window.dispatchEvent(new Event("resize"));
+    });
+  });
+})();
+</script>
 <script>
 /* Fade sections in as they enter the screen and out as they leave. */
 (function () {
