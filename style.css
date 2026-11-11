@@ -29,11 +29,11 @@ a:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .btn-ghost{background:transparent;color:#fff;border:2px solid var(--slate-light)}
 .btn-ghost:hover{background:var(--slate-dark)}
 .btn-small{padding:.4rem 1.2rem;font-size:.9rem}
-.hero-cta{grid-area:cta;display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+.hero-cta{grid-area:cta;align-self:center;justify-self:start;display:flex;flex-wrap:wrap;gap:.75rem;margin:0}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1fr auto 1fr;grid-template-areas:"name photo ." "tag photo ." "cta photo .";align-items:start;gap:1rem 2rem;padding:2rem 1.25rem 2.5rem;max-width:1400px;margin:0 auto}
-.pill-name{grid-area:name;justify-self:start;border-radius:var(--radius);font-size:clamp(1.8rem,3vw,2.8rem);padding:.9rem 3rem;margin:0}
+.hero{display:grid;grid-template-columns:1fr auto 1fr;grid-template-areas:"name photo cta" "tag photo cta";align-items:start;gap:1rem 2rem;padding:2rem 1.25rem 2.5rem;max-width:1400px;margin:0 auto}
+.pill-name{grid-area:name;justify-self:start;max-width:100%;border-radius:var(--radius);font-size:clamp(2.4rem,4.6vw,4.2rem);line-height:1.1;padding:1.1rem 2rem;margin:0}
 .pill-tag{grid-area:tag;justify-self:start;border-radius:var(--radius);text-align:left;max-width:15rem;font-size:clamp(1.1rem,1.6vw,1.5rem);margin:3rem 0 0;padding:1.25rem 1.5rem}
 .portrait{grid-area:photo;width:clamp(300px,32vw,520px);border:6px solid #000;background:#111;aspect-ratio:620/830;object-fit:cover}
 .rule{height:6px;max-width:700px;margin:1.5rem auto;border-radius:3px;background:#565656}
@@ -103,7 +103,7 @@ a:focus-visible{outline:3px solid #fff;outline-offset:3px}
   .nav .pill{padding:.3rem 1rem}
   .hero{grid-template-columns:1fr;grid-template-areas:"photo" "name" "tag" "cta";justify-items:center;gap:1rem}
   .portrait{width:min(100%,360px)}
-  .hero-cta{justify-content:center}
+  .hero-cta{justify-content:center;justify-self:center;align-self:auto}
   .nav nav{flex-wrap:wrap;gap:.5rem}
   .pill-name,.pill-tag{justify-self:center;border-radius:var(--radius);max-width:none;margin:0;text-align:center}
   .about-row,.jam-grid,.contact-bar{grid-template-columns:1fr}
